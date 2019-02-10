@@ -1,25 +1,17 @@
 import React, { Component } from 'react';
-import { Text } from 'react-native';
+import { View } from 'react-native';
+
+import Itens from './itens.android';
 
 export default class ListaItens extends Component {
 
-  constructor(props) {
-    super(props);
-    console.log('Construindo...');
-  }
-
-  componentWillMount() {
-    console.log('Fazer algo antes de renderizar');
-  }
-
-  componentDidMount() {
-    console.log('depois de renderizar');
-  }
-
   render() {
-    console.log('renderizado');
     return (
-      <Text>Importação de componente</Text>
+      <View>
+        <Itens />
+        <Itens />
+        <Itens />
+      </View>
     );
   }
 }
